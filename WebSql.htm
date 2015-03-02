@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="jquery-1.4.1.min.js" type="text/javascript"></script>
+    <script src="webSQL.js" type="text/javascript"></script>
+    <script type="text/javascript">
+
+//        localStorage.name = "张三";
+//        localStorage.age = 20;
+//        localStorage.sex = "男";
+
+        var webSql = new webStorage.webSql();
+
+     
+    </script>
+</head>
+<body>
+  1:<button id="btn" onclick="webSql.openDatabase()">
+        创建数据库Student</button>
+    <br />
+    2:<button id="Button1"  onclick="webSql.createTable()">
+        创建表stu</button>
+    <br />
+    3:<button id="Button2" onclick="webSql.insert()">
+        插入数据</button>
+    <br />
+    4:<button id="Button3" onclick="webSql.query()">
+        查询数据</button>
+    <br />
+    5:<button id="Button4" onclick="webSql.dropTable()">
+        删除表</button>
+    <div id="datalist">
+    </div>
+</body>
+</html>
