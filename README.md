@@ -1,0 +1,2 @@
+# WebStorage
+Web Storage
